@@ -1,0 +1,86 @@
+2026-11-12 10:22:35,622 | INFO | ai_agent | Received user request: show me all the files in the folder
+2026-11-12 10:22:35,623 | INFO | ai_agent | Sending planner request
+2026-11-12 10:22:35,623 | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-11-12 10:22:39,156 | INFO | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-11-12 10:22:39,166 | INFO | ai_agent | Planner raw response: {
+    "tool": "list_files",
+    "args": []
+}
+2026-11-12 10:22:39,166 | INFO | ai_agent | Planner decision: {'tool': 'list_files', 'args': []}
+2026-11-12 10:22:39,166 | INFO | ai_agent | Planner selected tool: list_files | args=[]
+2026-11-12 10:22:39,166 | INFO | ai_agent | Executing tool: list_files | args=[]
+2026-11-12 10:22:39,166 | INFO | ai_agent | Listing files from current directory
+2026-11-12 10:22:39,166 | INFO | ai_agent | Tool execution completed: list_files
+2026-11-12 10:22:39,167 | INFO | ai_agent | Execution completed in 3.54 seconds
+2026-11-12 10:27:18,052 | INFO | ai_agent | Received user request: read and display tools_description.py
+2026-11-12 10:27:18,052 | INFO | ai_agent | Sending planner request
+2026-11-12 10:27:18,052 | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-11-12 10:27:25,718 | INFO | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-11-12 10:27:25,729 | INFO | ai_agent | Planner raw response: {
+    "tool": "read_file",
+    "args": ["tools_description.py"]
+}
+2026-11-12 10:27:25,729 | INFO | ai_agent | Planner decision: {'tool': 'read_file', 'args': ['tools_description.py']}
+2026-11-12 10:27:25,730 | INFO | ai_agent | Planner selected tool: read_file | args=['tools_description.py']
+2026-11-12 10:27:25,730 | INFO | ai_agent | Executing tool: read_file | args=['tools_description.py']
+2026-11-12 10:27:25,730 | INFO | ai_agent | Reading file: tools_description.py
+2026-11-12 10:27:25,730 | WARNING | ai_agent | File not found: tools_description.py
+2026-11-12 10:27:25,730 | INFO | ai_agent | Tool execution completed: read_file
+2026-11-12 10:27:25,731 | INFO | ai_agent | Execution completed in 7.68 seconds
+2026-11-12 10:28:33,154 | INFO | ai_agent | Received user request: read tool_descriptions.py
+2026-11-12 10:28:33,154 | INFO | ai_agent | Sending planner request
+2026-11-12 10:28:33,154 | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-11-12 10:28:34,650 | INFO | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-11-12 10:28:34,651 | INFO | ai_agent | Planner raw response: {
+    "tool": "read_file",
+    "args": ["tool_descriptions.py"]
+}
+2026-11-12 10:28:34,651 | INFO | ai_agent | Planner decision: {'tool': 'read_file', 'args': ['tool_descriptions.py']}
+2026-11-12 10:28:34,652 | INFO | ai_agent | Planner selected tool: read_file | args=['tool_descriptions.py']
+2026-11-12 10:28:34,652 | INFO | ai_agent | Executing tool: read_file | args=['tool_descriptions.py']
+2026-11-12 10:28:34,652 | INFO | ai_agent | Reading file: tool_descriptions.py
+2026-11-12 10:28:34,652 | WARNING | ai_agent | File not found: tool_descriptions.py
+2026-11-12 10:28:34,652 | INFO | ai_agent | Tool execution completed: read_file
+2026-11-12 10:28:34,653 | INFO | ai_agent | Execution completed in 1.5 seconds
+2026-11-12 10:38:44,340 | INFO | ai_agent | Received user request: show me all the files and subfiles
+2026-11-12 10:38:44,341 | INFO | ai_agent | Sending planner request
+2026-11-12 10:38:44,341 | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-11-12 10:38:53,555 | INFO | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-11-12 10:38:53,557 | INFO | ai_agent | Planner raw response: {
+    "tool": "list_files",
+    "args": []
+}
+2026-11-12 10:38:53,557 | INFO | ai_agent | Planner decision: {'tool': 'list_files', 'args': []}
+2026-11-12 10:38:53,557 | INFO | ai_agent | Planner selected tool: list_files | args=[]
+2026-11-12 10:38:53,557 | INFO | ai_agent | Executing tool: list_files | args=[]
+2026-11-12 10:38:53,558 | INFO | ai_agent | Listing files from current directory
+2026-11-12 10:38:53,558 | INFO | ai_agent | Tool execution completed: list_files
+2026-11-12 10:38:53,558 | INFO | ai_agent | Execution completed in 9.22 seconds
+2026-11-12 10:39:38,349 | INFO | ai_agent | Received user request: read file tool_descriptions.py inside the folder tools
+2026-11-12 10:39:38,350 | INFO | ai_agent | Sending planner request
+2026-11-12 10:39:38,351 | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-11-12 10:39:40,277 | INFO | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-11-12 10:39:40,279 | INFO | ai_agent | Planner raw response: {
+    "tool": "read_file",
+    "args": ["tools/tool_descriptions.py"]
+}
+2026-11-12 10:39:40,279 | INFO | ai_agent | Planner decision: {'tool': 'read_file', 'args': ['tools/tool_descriptions.py']}
+2026-11-12 10:39:40,279 | INFO | ai_agent | Planner selected tool: read_file | args=['tools/tool_descriptions.py']
+2026-11-12 10:39:40,279 | INFO | ai_agent | Executing tool: read_file | args=['tools/tool_descriptions.py']
+2026-11-12 10:39:40,279 | INFO | ai_agent | Reading file: tools/tool_descriptions.py
+2026-11-12 10:39:40,279 | INFO | ai_agent | Tool execution completed: read_file
+2026-11-12 10:39:40,279 | INFO | ai_agent | Execution completed in 1.93 seconds
+2026-11-12 10:45:08,928 | INFO | ai_agent | Received user request: show me all the file inside the folder agent
+2026-11-12 10:45:08,929 | INFO | ai_agent | Sending planner request
+2026-11-12 10:45:08,929 | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-11-12 10:45:12,216 | INFO | httpx2 | HTTP Request: POST https://generativelanguage.googleapis.com/v1/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-11-12 10:45:12,225 | INFO | ai_agent | Planner raw response: {
+    "tool": "list_files",
+    "args": []
+}
+2026-11-12 10:45:12,225 | INFO | ai_agent | Planner decision: {'tool': 'list_files', 'args': []}
+2026-11-12 10:45:12,225 | INFO | ai_agent | Planner selected tool: list_files | args=[]
+2026-11-12 10:45:12,225 | INFO | ai_agent | Executing tool: list_files | args=[]
+2026-11-12 10:45:12,225 | INFO | ai_agent | Listing files from current directory
+2026-11-12 10:45:12,226 | INFO | ai_agent | Tool execution completed: list_files
+2026-11-12 10:45:12,226 | INFO | ai_agent | Execution completed in 3.3 seconds

@@ -1,6 +1,6 @@
-from gemini_planner import choose_tool
-from memory import add_message
-from executor import execute_tool
+from agent.planner import choose_tool
+from agent.memory import add_message
+from agent.executor import execute_tool
 
 MAX_STEPS = 3
 
